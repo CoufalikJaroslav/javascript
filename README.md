@@ -5,12 +5,12 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spre
 
 ```javascript
 var person = {
-	name: "Ahoj",
-  date: "asdf"
+    name: "Ahoj",
+    date: "asdf"
 }
 
 var entity = {
-	age: 6
+    age: 6
 }
 
 var p = {
