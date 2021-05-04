@@ -55,3 +55,30 @@ function sortedArray(arr: any[], propertyName: string): any[] {
 
 console.log(sortedArray(arr, "name"));
 ```
+
+```javascript
+class Person {
+    constructor(i, p) {
+        this.name = i;
+        this.place = p;
+    }
+}
+function getPropertyValue(j, name) {
+    return j[name];
+}
+var arr = [];
+arr = [new Person("a", "1"), new Person("c", "3"), new Person("b", "2"), new Person("x", "100")];
+function sortedArray(arr, propertyName) {
+    return arr.sort((a, b) => {
+        const aV = getPropertyValue(a, propertyName);
+        const bV = getPropertyValue(b, propertyName);
+        if (aV > bV) {
+            return 1;
+        }
+        else {
+            return -1;
+        }
+    });
+}
+console.log(sortedArray(arr, "name"));
+```
