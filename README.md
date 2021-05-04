@@ -22,7 +22,7 @@ var p = {
 ```
 
 
-```
+```typescript
 class Person {
     name: string;
     place: string;
