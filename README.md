@@ -21,6 +21,12 @@ var p = {
 
 ```
 
+```typescript
+const subItems: { [key: string]: number } = {};
+subItems["a"] = 1;
+console.log(Object.keys(subItems).length);
+```
+
 
 ```typescript
 class Person {
